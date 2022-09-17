@@ -1172,4 +1172,84 @@ $ git checkout -b falskInt
 Switched to a new branch 'falskInt'
 
 ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (falskInt)
-$
+$ git status
+On branch feature1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   mylogs.txt
+        new file:   mylogs/mylogs.txt
+        new file:   waste.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   index.html
+        deleted:    mylogs/mylogs.txt
+        modified:   waste.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        commands.TXT
+
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (feature1)
+$ git checkout master
+Switched to branch 'master'
+A       .gitignore
+M       index.html
+A       mylogs.txt
+A       waste.txt
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git add -A
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git commit -a -m "addin"
+[master 1368883] addin
+ 5 files changed, 1185 insertions(+), 5 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 commands.TXT
+ create mode 100644 mylogs.txt
+ create mode 100644 waste.txt
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git remote add origin https://github.com/ASPRAJNA/demo1.git
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git remote
+origin
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git remote -v
+origin  https://github.com/ASPRAJNA/demo1.git (fetch)
+origin  https://github.com/ASPRAJNA/demo1.git (push)
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git push origin master
+
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git push origin master
+
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
+$ git push origin master
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (18/18), 3.98 KiB | 1.33 MiB/s, done.
+Total 18 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ASPRAJNA/demo1.git
+ * [new branch]      master -> master
+
+ASPrajna@DESKTOP-OO6LF1L MINGW64 /d/Desktop/git (master)
