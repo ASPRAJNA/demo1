@@ -1,0 +1,5 @@
+mylogs.txt
+*.log
+*.cpp
+/logg.log
+mylogsk/
